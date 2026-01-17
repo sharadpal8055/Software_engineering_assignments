@@ -2,7 +2,7 @@ import unittest
 from src.library import Library
 
 
-# ---------- Sprint 1 Tests ----------
+# ---------- Sprint 1 ----------
 class TestSprint1(unittest.TestCase):
 
     def test_add_book_success(self):
@@ -17,7 +17,7 @@ class TestSprint1(unittest.TestCase):
             lib.add_book("B101", "Duplicate", "Someone")
 
 
-# ---------- Sprint 2 Tests ----------
+# ---------- Sprint 2 ----------
 class TestSprint2(unittest.TestCase):
 
     def test_borrow_book_success(self):
@@ -39,10 +39,10 @@ class TestSprint2(unittest.TestCase):
         lib.borrow_book("B201")
         lib.return_book("B201")
         self.assertEqual(lib.books["B201"]["status"], "Available")
-        
-        
-        
-        class TestSprint3(unittest.TestCase):
+
+
+# ---------- Sprint 3 ----------
+class TestSprint3(unittest.TestCase):
 
     def test_report_contains_header(self):
         lib = Library()
@@ -54,5 +54,4 @@ class TestSprint2(unittest.TestCase):
         lib.add_book("B301", "DSA", "CLRS")
         report = lib.generate_report()
         self.assertIn("B301", report)
-
 
