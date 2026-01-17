@@ -19,3 +19,11 @@ class Library:
     def return_book(self, book_id):
         self.books[book_id]["status"] = "Available"
 
+    def generate_report(self):
+        lines = ["BOOK ID\tTITLE\tAUTHOR\tSTATUS"]
+        for book_id, data in self.books.items():
+            lines.append(
+                f"{book_id}\t{data['title']}\t{data['author']}\t{data['status']}"
+            )
+        return "\n".join(lines)
+

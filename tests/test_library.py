@@ -39,4 +39,20 @@ class TestSprint2(unittest.TestCase):
         lib.borrow_book("B201")
         lib.return_book("B201")
         self.assertEqual(lib.books["B201"]["status"], "Available")
+        
+        
+        
+        class TestSprint3(unittest.TestCase):
+
+    def test_report_contains_header(self):
+        lib = Library()
+        report = lib.generate_report()
+        self.assertIn("BOOK ID", report)
+
+    def test_report_contains_book_entry(self):
+        lib = Library()
+        lib.add_book("B301", "DSA", "CLRS")
+        report = lib.generate_report()
+        self.assertIn("B301", report)
+
 
