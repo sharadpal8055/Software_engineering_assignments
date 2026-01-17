@@ -4,3 +4,6 @@
 
 | 2 | US2,US3 | borrow_book, return_book | TestSprint2 | v0.2 |
 
+
+| 3 | US4 | generate_report | TestSprint3 | v0.3 |
+
