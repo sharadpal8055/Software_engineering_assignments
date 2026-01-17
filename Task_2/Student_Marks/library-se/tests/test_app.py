@@ -70,6 +70,25 @@ class TestSprint2(unittest.TestCase):
             ms.calculate_grade("204")
 
 
+class TestSprint3(unittest.TestCase):
+
+    def test_generate_report_contains_header(self):
+        ms = MarksSystem()
+        report = ms.generate_report()
+        self.assertIn("Student ID", report)
+        self.assertIn("Name", report)
+        self.assertIn("Marks", report)
+        self.assertIn("Grade", report)
+
+    def test_generate_report_contains_student_entry(self):
+        ms = MarksSystem()
+        ms.add_student("301", "Kiran")
+        ms.add_marks("301", 82)
+        report = ms.generate_report()
+        self.assertIn("301", report)
+        self.assertIn("Kiran", report)
+        self.assertIn("82", report)
+        self.assertIn("A", report)
 
 
 if __name__ == "__main__":

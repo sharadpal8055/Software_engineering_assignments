@@ -42,3 +42,20 @@ class MarksSystem:
         else:
             return "C"
 
+    def generate_report(self):
+        lines = []
+        header = "Student ID | Name | Marks | Grade"
+        lines.append(header)
+
+        for student_id, student in self.students.items():
+            marks = student.marks if student.marks is not None else "N/A"
+            try:
+                grade = self.calculate_grade(student_id)
+            except ValueError:
+                grade = "N/A"
+
+            line = f"{student_id} | {student.name} | {marks} | {grade}"
+            lines.append(line)
+
+        return "\n".join(lines)
+
