@@ -1,7 +1,7 @@
 # Library Book Management System  
 **Software Engineering Assignment – Task 1 (CS2042)**
 
-## 📌 Overview
+## Overview
 This project implements a **Library Book Management System** using a **three-sprint Agile development process**.  
 The focus of the assignment is **software engineering discipline**, not just functionality.
 
@@ -15,7 +15,7 @@ All data is stored using **in-memory data structures** (no database).
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Practice **Agile Software Development**
 - Follow **Git discipline** (feature branches, merges, tags)
 - Apply **Test-Driven Development (RED → GREEN → REFACTOR)**
@@ -31,7 +31,7 @@ All data is stored using **in-memory data structures** (no database).
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 library-se/
 ├── src/
 │ ├── init.py
@@ -48,9 +48,9 @@ library-se/
 
 ---
 
-## 🚀 Sprint-wise Implementation
+##  Sprint-wise Implementation
 
-### 🟢 Sprint 1 – Book Registration (`v0.1`)
+###  Sprint 1 – Book Registration (`v0.1`)
 **Goal:** Add and store books in the library.
 
 **Features:**
@@ -66,7 +66,7 @@ library-se/
 
 ---
 
-### 🟡 Sprint 2 – Borrow & Return Book (`v0.2`)
+###  Sprint 2 – Borrow & Return Book (`v0.2`)
 **Goal:** Manage borrowing status of books.
 
 **Features:**
@@ -85,7 +85,7 @@ library-se/
 
 ---
 
-### 🔵 Sprint 3 – Library Report (`v0.3`)
+###  Sprint 3 – Library Report (`v0.3`)
 **Goal:** Generate library status report.
 
 **Features:**
@@ -104,7 +104,7 @@ library-se/
 
 ---
 
-## 🧪 Running Unit Tests
+##  Running Unit Tests
 All tests must be run from the project root directory.
 
 ```bash
@@ -113,7 +113,7 @@ python3 -m unittest discover -s tests -p "test_*.py" -v
 Expected Output
 Ran X tests in ...
 OK
-🔀 Git Workflow Followed
+ Git Workflow Followed
 
 No direct commits to main
 
@@ -165,17 +165,11 @@ Proper Git discipline using branches and tags
 
 How Agile development improves reliability and maintainability
 
-📎 Submission Details
 
-Course: CS2042 – Software Engineering
-
-Assignment: Agile Development with Git and Unit Testing
-
-Repository:
-https://github.com/sharadpal8055/Software_engineering_assignments
 
 🏁 Conclusion
 
-This project demonstrates a complete software engineering lifecycle using Agile practices, TDD, and Git.
+This project demonstrates a complete software engineering lifecycle using Agile practices,  and Git.
 It emphasizes maintainability, correctness, and traceability, aligning with industry-standard development practices.
+
 
